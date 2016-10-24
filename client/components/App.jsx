@@ -10,6 +10,7 @@ class App extends Component {
     return (
       <div>
         <ul className="nav">
+          <li><Link className="home" to="/">Home</Link></li>
           <li><Link className="login" to="/login">Login</Link></li>
           <li><Link className="register" to="/register">Register</Link></li>
         </ul>
