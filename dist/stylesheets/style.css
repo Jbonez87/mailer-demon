@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(rgb(14, 149, 179), rgb(15, 131, 196));
+}
+
+.header {
+  color: rgb(208, 19, 35);
+  text-align: center;
+}
