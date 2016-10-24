@@ -22,7 +22,7 @@ app.use(session({
 
 app.use(morgan('dev'));
 
-// app.use('/app', authentication);
+app.use('/app', authentication);
 app.use('/app', AuthRouter);
 app.use('/app/users', UserRouter);
 app.use('/app/thankyou', authentication);

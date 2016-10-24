@@ -18,13 +18,16 @@ class AuthController {
              }
            })
            .catch((err) => {
+             console.log(err);
              res.status(401).end();
            });
   }
   static signUp(req, res) {
     const name = req.body.name;
     const email = req.body.email;
+    console.log(email);
     let password = req.body.password;
+    console.log(password);
     if (email.length > 0 && password.length > 0) {
       password = bcrypt.hashSync(password, 10);
       UserDAO.create({ name, email, password })

@@ -9,8 +9,9 @@ class UserDAO {
     const value = keyValue[key];
     return db.one(sql.find, [key, value]).then((row) => new User(row));
   }
-  static create({ email, password }) {
-    return db.one(sql.create, [email, password]).then((row) => new User(row));
+  static create({ name, email, password }) {
+    console.log(email);
+    return db.one(sql.create, [name, email, password]).then((row) => new User(row));
   }
 }
 
