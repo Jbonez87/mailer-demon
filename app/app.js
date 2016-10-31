@@ -17,7 +17,7 @@ app.use(session({
   secret: process.env.SESSION_SECRET,
   cookie: {},
   resave: true,
-  saveUnitialized: true,
+  saveUninitialized: true,
 }));
 
 app.use(morgan('dev'));
@@ -25,6 +25,6 @@ app.use(morgan('dev'));
 app.use('/app', authentication);
 app.use('/app', AuthRouter);
 app.use('/app/users', UserRouter);
-app.use('/app/thankyou', authentication);
+app.use('/app/dashboard', authentication);
 
 module.exports = app;

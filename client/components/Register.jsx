@@ -17,6 +17,7 @@ class Register extends Component {
   }
   handleInputChange(e) {
     const input = e.target;
+    console.log(input);
     const inputName = input.getAttribute('name');
     const updated = {};
     updated[inputName] = input.value;
@@ -28,7 +29,7 @@ class Register extends Component {
            .send(this.state)
            .then(() => {
              this.updateAuth();
-             this.props.router.push('/thankyou');
+             this.props.router.push('/dashboard');
            });
   }
   updateAuth() {

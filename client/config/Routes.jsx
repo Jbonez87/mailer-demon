@@ -4,7 +4,7 @@ import App from '../components/App.jsx';
 import Home from '../components/Home.jsx';
 import Login from '../components/Login.jsx';
 import Register from '../components/Register.jsx';
-import ThankYou from '../components/ThankYou.jsx';
+import Dashboard from '../components/Dashboard.jsx';
 
 const Routes = () => {
   return (
@@ -13,7 +13,7 @@ const Routes = () => {
         <IndexRoute component={Home} />
         <Route path="/register" component={Register} />
         <Route path="/login" component={Login} />
-        <Route path="/thankyou" component={ThankYou} />
+        <Route path="/dashboard" component={Dashboard} />
       </Route>
     </Router>
   );

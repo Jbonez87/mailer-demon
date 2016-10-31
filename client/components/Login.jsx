@@ -31,7 +31,7 @@ class Login extends Component {
              this.updateAuth();
              let cleanUser = JSON.parse(user.text);
              console.log(cleanUser);
-             this.props.router.push('/thankyou');
+             this.props.router.push('/dashboard');
            });
   }
 
